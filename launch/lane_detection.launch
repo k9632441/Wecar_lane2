@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+
+   <include file="$(find vesc_driver)/launch/vesc_driver_node.launch">
+   </include>
+
+  
+
+   <node name="line_detect" pkg="lane_detection" type="line_detect_ros.py" output="screen" >
+   </node>
+
+</launch>
